@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/hamburgers.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <header class="el-header">
+        <div class="el-container">
+            <button class="hamburger hamburger--emphatic-r" onclick="myFunction(this)" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <nav>
+                <!-- <span class="logo">AGF.</span> -->
+                <ul class="menu">
+                    <li data-text="Home">
+                        <a href="#">Home</a>
+                    </li>
+                    <li data-text="Resume">
+                        <a href="#">Resume</a>
+                    </li>
+                    <li data-text="Projects">
+                        <a href="#">Projects</a>
+                    </li>
+                    <li data-text="Contact Me">
+                        <a href="#">Contact Me</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="img-container">
+            <img src="assests/images/alonso.jpg" alt="My Face" width="700px" class="el-container">
+        </section>
+        <section class="el-container">
+            <!-- <h1>Howdy!</h1> -->
+            <article class="intro">
+                <h2>My name is
+                    <span class="name">Alonso Gonzalez Flores</span>, a nascent software developer that recently sprouted from
+                    <abbr title="California State University Northridge">CSUN</abbr>
+                    with a Computer Science Degree. </h2>
+
+            </article>
+        </section>
+        <section class="el-container">
+            <p> JAVA </p>
+        </section>
+    </main>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("is-active");
+            $('body').toggleClass('open');
+        }
+    </script>
+</body>
+
+</html>
