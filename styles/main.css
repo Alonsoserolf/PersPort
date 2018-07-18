@@ -45,7 +45,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    /* height: 63.5px; */
+    height: 70px;
 }
 
 img[alt="My Face"] {
@@ -95,12 +95,13 @@ nav a {
 .hamburger-inner,
 .hamburger-inner::after,
 .hamburger-inner::before {
-    background: var(--dark-col);
+    background: linear-gradient(90deg, #55a8ce, #11b894 50%);
+    /* var(--dark-col); */
 }
 
 .is-active .hamburger-inner::before,
 .is-active .hamburger-inner::after {
-    background: var(--bg-col);
+    background: #f83614;
 }
 
 .logo {
@@ -150,6 +151,9 @@ nav,
 }
 
 @media (max-width: 1200px) {
+    .el-header{
+        background: transparent;
+    }
     .hamburger {
         display: inline-block;
         visibility: visible;
@@ -377,5 +381,17 @@ nav,
             padding-bottom: 0;
             border-radius: 0;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    img{
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    img{
+        width: 350px;
     }
 }
