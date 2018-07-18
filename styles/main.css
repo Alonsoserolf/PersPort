@@ -7,10 +7,12 @@
     outline: none;
     text-decoration: none;
 }
-:root{
+
+:root {
     --dark-col: #161616;
-    --bg-col:   #f7f7f4;
+    --bg-col: #f7f7f4;
 }
+
 ::-moz-selection {
     background: rgba(0, 0, 0, 0.2);
 }
@@ -35,7 +37,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: var(--bg-col);
     font-size: 16px;
-    line-height: 2em;
+    line-height: 4Sem;
 }
 
 .el-header {
@@ -46,17 +48,10 @@ body {
     /* height: 63.5px; */
 }
 
-.el-header::after,
-ul.menu, nav,
-.el-container  {
-    overflow: hidden;
-}
-
-img[alt="My Face"]{
+img[alt="My Face"] {
     display: block;
     margin: 70px auto 0;
     box-shadow: 0 4px 8px 0 rgba(0, 8, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .img-container {
@@ -78,9 +73,8 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 5px;
+    margin: 18px 9px;
     vertical-align: middle;
-
 }
 
 nav a {
@@ -148,6 +142,13 @@ article {
     transition: 0.2s ease-out;
 }
 
+.el-header::after,
+ul.menu,
+nav,
+.el-container {
+    overflow: hidden;
+}
+
 @media (max-width: 1200px) {
     .hamburger {
         display: inline-block;
@@ -192,6 +193,7 @@ article {
         bottom: 0;
         left: 0;
         margin: auto;
+        /* z-index: 4; */
         background: linear-gradient(45deg, #55a8ce, #11b894 70%);
         width: 100%;
         height: 0;
@@ -203,6 +205,7 @@ article {
     }
     .open nav {
         top: 0;
+        /* z-index: 4; */
     }
     .open nav:before {
         -webkit-animation: menu-animation 0.8s ease-out forwards;
