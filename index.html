@@ -10,12 +10,19 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-
+    <script src="scripts/index.js"></script>
     <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
-    <header class="el-header">
+    <header id="para">
+        <span id="name">
+            <p>
+            Alonso Gonzalez
+            </p>
+        </span>
+    </header>
+    <div class="el-header">
         <div class="el-container">
             <button class="hamburger hamburger--emphatic-r" onclick="myFunction(this)" type="button">
                 <span class="hamburger-box">
@@ -23,7 +30,6 @@
                 </span>
             </button>
             <nav>
-                <!-- <span class="logo">AGF.</span> -->
                 <ul class="menu">
                     <li data-text="Home">
                         <a href="#">Home</a>
@@ -38,26 +44,26 @@
                         <a href="#">Contact Me</a>
                     </li>
                 </ul>
-
             </nav>
         </div>
-    </header>
-    <main>
+    </div>
+    <main class="content">
         <section class="img-container">
             <img src="assests/images/alonso.jpg" alt="My Face" width="700px" class="el-container">
         </section>
-        <section class="el-container">
-            <!-- <h1>Howdy!</h1> -->
+        <section class="el-container ">
             <article class="intro">
-                <h2>My name is
-                    <span class="name">Alonso Gonzalez Flores</span>, a nascent software developer that recently sprouted from
+                <h2> Hello world! nice to meet ya. My name is
+                    <span class="name">Alonso Gonzalez</span>, a  software developer that recently sprouted from
                     <abbr title="California State University Northridge">CSUN</abbr>
-                    with a Computer Science Degree. </h2>
-
+                    with a Bachelor&apos;s Degree focused in Computer Science. </h2>
             </article>
         </section>
-        <section class="el-container">
-            <p> JAVA </p>
+        <section class="el-container skill-section">
+            <div class="setion-title">
+                <h3>SKILLS</h3>
+            </div>
+
         </section>
     </main>
     <script>
