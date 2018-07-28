@@ -1,15 +1,19 @@
 $(()=> {
-  var mn = $(".el-header");
-  var cnt = $(".content");
-  var fixed = "mainnav-scrolled";
-  var win = $(window);
+  let mn = $(".el-header");
+  let cnt = $(".content");
+  let fixed = "mainnav-scrolled";
+  let win = $(window);
+  let logo = $(".logo");
   const speed = .2;
+
 
   $(document).scroll(function() {
 
     //nav not fixed  
     if (win.scrollTop() <= (cnt.offset().top)) {
-
+      // logo.css('visibility', 'hidden' );
+      // logo.fadeOut(10);
+      logo.removeClass('visible');
       mn.removeClass(fixed);
 
       //parallax effect for header
@@ -26,6 +30,10 @@ $(()=> {
         //nav fixed
     if (win.scrollTop() >= (mn.offset().top)) {
       mn.addClass(fixed);
+      logo.addClass('visible');
+      // logo.fadeIn(200);
+      // logo.css('visibility', 'visible' );
+
     }
   });
 });

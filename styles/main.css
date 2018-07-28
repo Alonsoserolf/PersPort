@@ -1,5 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Creepster|Trade+Winds|Ubuntu';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+
+:root {
+    --dark-col: #161616;
+    --bg-col: #f7f7f4;
+}
+
 *,
 *::before,
 *::after,
@@ -9,15 +15,10 @@
     text-decoration: none;
 }
 
-:root {
-    --dark-col: #161616;
-    --bg-col: #f7f7f4;
-}
-
 ::-moz-selection {
     background: rgba(0, 0, 0, 0.2);
 }
-
+/*gets rid of some default outlines mozilla styling*/
 button::-moz-focus-inner {
     border: 0;
 }
@@ -30,7 +31,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 body {
@@ -42,7 +42,7 @@ body {
 #name 
 {
   font-family: 'Trade Winds', Helvetica, cursive;
-  Color:#ffee58;
+  color:#ffee58;
   text-shadow: 0 2px 3px rgba(0, 0, 0, .99);
   position: relative;
   top:25vh;
@@ -65,6 +65,16 @@ header
   overflow-y: hidden;
 }
 
+.logo{
+    font-family: 'Trade Winds', Helvetica, cursive;
+    color:#ffee58;
+    vertical-align: middle;
+    line-height: 60px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
 .el-header {
     background: linear-gradient(50deg, #55a8ce, #11b894 60%);
     margin-bottom: -60px;
@@ -72,18 +82,21 @@ header
     z-index: 33;
     height: 60px;
 }
+
 .mainnav-scrolled 
 {
   position: fixed !important;
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, .4) !important;
+  /* box-shadow: 0 2px 3px rgba(0, 0, 0, .4) !important; */
 }
 
 img[alt="My Face"] {
     display: block;
     margin: 70px auto 0;
     box-shadow: 0 4px 8px 0 rgba(0, 8, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 665px;
+    border-radius: 2%;
     opacity: 1;
     transition: all .5s ease-in-out;
 }
@@ -98,6 +111,12 @@ img[alt="My Face"] {
     margin: 0 auto;
 }
 
+nav{
+    /* display: inline-block; */
+    float: right;
+    height: 60px;
+}
+
 nav ul {
     list-style: none;
     float: right;
@@ -105,15 +124,18 @@ nav ul {
     margin: auto 0;
 }
 
+/* ul.menu{
+    height: 60px;
+} */
+
 nav ul li {
     display: inline-block;
-    margin: 18px 9px;
+    margin: 10px 9px;
     vertical-align: middle;
 }
 
 nav ul li a {
     display: block;
-    /* text-decoration: none; */
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 28px;
@@ -121,10 +143,11 @@ nav ul li a {
 }
 
 .hamburger {
-    display: none;
+    /* display: none; */
     z-index: 2;
     position: relative;
     outline: none;
+    visibility: hidden;
 }
 
 .hamburger-inner,
@@ -172,16 +195,22 @@ ul.menu,nav,
 .el-container {
     overflow: hidden;
 }
+
 @media (max-width: 1200px) {
     .el-header{
-        background: #f7f7f400;
+        background: transparent;
+    }
+    .logo{
+        float: left;
+        color: var(--dark-col);
+        padding-left: 15px;
+        /* visibility: visible; */
     }
     .hamburger {
-        display: inline-block;
+        /* display: inline-block; */
         visibility: visible;
         opacity: 1;
-
-    
+        float: right;    
     }
     ul li {
         cursor: pointer;
@@ -397,14 +426,19 @@ ul.menu,nav,
 }
 
 @media (max-width: 600px) {
-    img{
+    img[alt="My Face"]{
         width: 450px;
-        opacity: 0.2;
+        /* opacity: 0.2; */
     }
 }
 
 @media (max-width: 500px) {
-    img{
+    img[alt="My Face"]{
         width: 350px;
     }
+}
+
+.visible{
+    visibility: visible;
+    opacity: 1;
 }
