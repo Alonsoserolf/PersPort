@@ -57,13 +57,18 @@ header {
     font-family: 'Trade Winds', Helvetica, cursive;
     color: var(--yellow);
     text-shadow: 0 2px 3px rgba(0, 0, 0, .99);
-    position: relative;
+    /* position: relative;
     top: 25vh;
-    left: 0%;
+    left: 0%; */
+    vertical-align: middle;
     font-size: 7.66vw;
     text-align: center;
     margin: 0;
     display: block;
+}
+#name p{
+    margin:0 auto;
+    line-height: 100vh;
 }
 
 
