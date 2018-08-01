@@ -4,7 +4,7 @@ $(()=> {
   let fixed = "mainnav-scrolled";
   let win = $(window);
   let logo = $(".logo");
-  const speed = -0.4;
+  const speed = -.2;
 
   //toggles menu
   myFunction = x => {

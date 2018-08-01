@@ -41,7 +41,18 @@ body {
     background: var(--bg-col);
     font-size: 16px;
 }
-
+header {
+    background: url("../assests/images/photo-1457274858420-ea606e99cc5c.jpeg") no-repeat center center;
+    background-color: #3E93AB;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position-x: center; */
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+    overflow-y: hidden;
+    background-attachment: fixed;
+}
 #name {
     font-family: 'Trade Winds', Helvetica, cursive;
     color: var(--yellow);
@@ -55,18 +66,7 @@ body {
     display: block;
 }
 
-header {
-    background-image: url("../assests/images/photo-1457274858420-ea606e99cc5c.jpeg");
-    background-color: #3E93AB;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    height: 100vh;
-    z-index: 10;
-    position: relative;
-    overflow-y: hidden;
-    background-attachment: fixed;
-}
+
 
 .logo {
     font-family: 'Trade Winds', Helvetica, cursive;
