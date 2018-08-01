@@ -4,75 +4,128 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Alonso Gonzalez | Software Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/hamburgers.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="scripts/index.js"></script>
-    <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
     <header id="para">
         <span id="name">
             <p>
-            Alonso Gonzalez
+                Alonso Gonzalez
             </p>
         </span>
     </header>
     <div class="el-header">
         <div class="el-container">
+            <span class="logo">AG</span>
             <button class="hamburger hamburger--emphatic-r" onclick="myFunction(this)" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            <span class="logo" >AG</span>
+
             <nav>
                 <ul class="menu">
-                    <li data-text="Home">
-                        <a href="#">Home</a>
+                    <li>
+                        <a href="#" data-text="Home">Home</a>
                     </li>
-                    <li data-text="Resume">
-                        <a href="#">Resume</a>
+                    <li>
+                        <a href="#" data-text="About">About</a>
                     </li>
-                    <li data-text="Projects">
-                        <a href="#">Projects</a>
+                    <li>
+                        <a href="#" data-text="Projects">Projects</a>
                     </li>
-                    <li data-text="Contact Me">
-                        <a href="#">Contact Me</a>
+                    <li>
+                        <a href="#" data-text="Contact Me">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="#" data-text="Resume">Resume</a>
                     </li>
                 </ul>
             </nav>
+
         </div>
     </div>
     <main class="content">
+
         <section class="img-container">
-            <img src="assests/images/alonso.jpg" alt="My Face" class="el-container">
+            <div class="my-face">
+                <img src="assests/images/agf.jpg" alt="My Face" class="el-container">
+                <div class="hidden-img-txt">See My True Colors IRL</div>
+            </div>
         </section>
+
         <section class="el-container ">
             <article class="intro">
                 <h2> Hello world! nice to meet ya. My name is
-                    <span class="name">Alonso Gonzalez</span>, a  software developer that recently sprouted from
+                    <span class="name">Alonso Gonzalez</span>, a software developer that recently sprouted from
                     <abbr title="California State University Northridge">CSUN</abbr>
                     with a Bachelor&apos;s Degree focused in Computer Science. </h2>
             </article>
         </section>
+
         <section class="el-container skill-section">
             <div class="setion-title">
                 <h3>SKILLS</h3>
             </div>
+        </section>
 
+        <section class="el-container">
+
+            <div class="section-title">
+                <h3>Contact Me</h3>
+            </div>
+
+            <form class="form">
+                <fieldset class="content-info">
+                    <p class="your-name">
+                        <label for="name">
+                            <span>Your Name:</span>
+                            <strong>
+                                <abbr title="required">*</abbr>
+                            </strong> <br>
+                            <input type="text" class="feedback-input contact-icon" id="username" name="name" placeholder="Alonso Gonzalez">
+                        </label>   
+                    </p>
+
+                    <p class="your-name">
+                        <label for="email">
+                            <span>E-Mail:</span>
+                            <strong>
+                                <abbr title="required">*</abbr>
+                            </strong><br>
+                            <input type="text" class="feedback-input contact-icon" id="email" name="email" placeholder="AlonsoGonzalez0x7C8@gmail.com">
+                        </label>
+                    </p>
+                </fieldset>
+
+                <p class="content-msg">
+                    <label for="content">
+                        <span>Your Message:</span>
+                        <strong>
+                            <abbr title="required">*</abbr>
+                        </strong>
+                        <br>
+                        <textarea name="content" class="feedback-input contact-icon" id="content" rows="7" placeholder="Your site is alright. You&apos;re alright. We&apos;re in LA. Let&apos;s Hangout!"></textarea>
+                    </label>
+                </p>
+
+                <div class="submit">
+                    <input type="submit" value="SEND" class="ease" id="button-blue" />
+                </div>
+
+            </form>
         </section>
     </main>
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("is-active");
-            $('body').toggleClass('open');
-        }
-    </script>
+    <footer class="foot">
+        <p>2018 &copy; brought to life for your enjoyment by Alonso Gonzalez</p>
+    </footer>
 </body>
 
 </html>

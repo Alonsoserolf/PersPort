@@ -4,15 +4,19 @@ $(()=> {
   let fixed = "mainnav-scrolled";
   let win = $(window);
   let logo = $(".logo");
-  const speed = .2;
+  const speed = -0.4;
 
+  //toggles menu
+  myFunction = x => {
+    x.classList.toggle("is-active");
+    $('body').toggleClass('open');
+    mn.addClass(fixed);
+  }
 
   $(document).scroll(function() {
 
     //nav not fixed  
     if (win.scrollTop() <= (cnt.offset().top)) {
-      // logo.css('visibility', 'hidden' );
-      // logo.fadeOut(10);
       logo.removeClass('visible');
       mn.removeClass(fixed);
 
@@ -27,13 +31,10 @@ $(()=> {
       let topDist = $(document).scrollTop();
       $('#name').css('padding-top', (topDist/10)*5);      
     }
-        //nav fixed
+    //nav fixed
     if (win.scrollTop() >= (mn.offset().top)) {
       mn.addClass(fixed);
       logo.addClass('visible');
-      // logo.fadeIn(200);
-      // logo.css('visibility', 'visible' );
-
     }
   });
 });
