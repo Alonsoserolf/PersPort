@@ -36,8 +36,8 @@ $(()=> {
         $this.css('background-position', elBackgrounPos);
       });  
 
-      // let topDist = $(document).scrollTop();
-      // $('#name').css('padding-top', (topDist/10)*5);      
+      let topDist = $(document).scrollTop();
+      $('#name').css('padding-top', (topDist/10)*5);      
     }
     //nav fixed
     if (win.scrollTop() >= (mn.offset().top)) {
