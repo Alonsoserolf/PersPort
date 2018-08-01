@@ -45,8 +45,6 @@ header {
     background: url("../assests/images/photo-1457274858420-ea606e99cc5c.jpeg") no-repeat center center;
     background-color: #3E93AB;
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* background-position-x: center; */
     height: 100vh;
     z-index: 10;
     position: relative;
@@ -57,17 +55,16 @@ header {
     font-family: 'Trade Winds', Helvetica, cursive;
     color: var(--yellow);
     text-shadow: 0 2px 3px rgba(0, 0, 0, .99);
-    /* position: relative;
-    top: 25vh;
-    left: 0%; */
-    vertical-align: middle;
+
     font-size: 7.66vw;
     text-align: center;
-    margin: 0;
+    /* margin: 0; */
     display: block;
 }
 #name p{
     margin:0 auto;
+    vertical-align: middle;
+
     line-height: 100vh;
 }
 
