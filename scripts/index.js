@@ -1,3 +1,16 @@
+
+  function scrollPage(duration) {
+    $("a[href^='#']").on("click", function() {
+      let href = $(this).attr("href");
+      console.log(href);
+      $("html, body").animate({
+        scrollTop: $(href).offset().top
+      }, duration);
+          return false;
+
+    });
+  }
+
 $(()=> {
   let mn = $(".el-header");
   let cnt = $(".content");
@@ -19,6 +32,9 @@ $(()=> {
     $('body').toggleClass('open');
     mn.addClass(fixed);
   }
+
+scrollPage(750)
+
 
   //sets nav on reload
   if (win.scrollTop() <= (cnt.offset().top)) {
@@ -50,7 +66,7 @@ $(()=> {
       let topDist = $(document).scrollTop();
       $('#name').css('padding-top', (topDist/10)*5);      
     }
-    
+
     //nav fixed
     if (win.scrollTop() >= (mn.offset().top)) {
       mn.addClass(fixed);

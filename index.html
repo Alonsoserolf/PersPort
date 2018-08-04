@@ -9,8 +9,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/hamburgers.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,16 +34,16 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a href="#" data-text="Home">Home</a>
+                        <a href="#para" data-text="Home">Home</a>
                     </li>
                     <li>
-                        <a href="#" data-text="About">About</a>
+                        <a href="#about" data-text="About">About</a>
                     </li>
                     <li>
-                        <a href="#" data-text="Projects">Projects</a>
+                        <a href="#projects" data-text="Projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#" data-text="Contact Me">Contact Me</a>
+                        <a href="#contact" data-text="Contact Me">Contact Me</a>
                     </li>
                     <li>
                         <a href="#" data-text="Resume">Resume</a>
@@ -53,14 +55,14 @@
     </div>
     <main class="content">
 
-        <section class="img-container">
+        <section class="img-container" id="me">
             <div class="my-face">
                 <img src="assests/images/alonsocolor.jpg" alt="My Face" class="el-container">
                 <div class="hidden-img-txt">See My True Colors IRL</div>
             </div>
         </section>
 
-        <section class="el-container ">
+        <section class="el-container " id="about">
             <article class="intro">
                 <h2> Hello world! nice to meet ya. My name is
                     <span class="name">Alonso Gonzalez</span>, a software developer that recently sprouted from
@@ -69,7 +71,7 @@
             </article>
         </section>
 
-        <section class="el-container skill-section">
+        <section class="el-container skill-section" id="skills">
             <div class="section-title">
                 <h3>Skills</h3>
             </div>
@@ -87,7 +89,7 @@
                             <p>Python</p>
                         </li>
                         <li>
-                            <p>C&sharp;</p>
+                            <p>C&#35;</p>
                         </li>
                         <li>
                             <p>HTML5</p>
@@ -104,7 +106,7 @@
                     </ul>
                 </div>
                 <div class="skills-col">
-                    <h4>Frameworks</h4>
+                    <h4><dfn title="&amp; Libraries..." >Frameworks</dfn></h4>
                     <ul>
                         <li>
                             <p>Angular</p>
@@ -113,7 +115,7 @@
                             <p>Node</p>
                         </li>
                         <li>
-                            <p>React</p>
+                            <p>jQuery</p>
                         </li>
                         <li>
                             <p>Bootstrap</p>
@@ -143,8 +145,51 @@
                 </div>
         </section>
 
-        <section class="el-container">
+        <section class="el-container " id="projects">
+            <div class="section-title">
+                <h3>Projects</h3>
+            </div>     
+            <div class="project-container">
+                <div class="projecto">
+                <a href="">
+                   <div class="imac">
+                        <div class="screen">
+                          <div class="viewport" style="background-image:url('https://newfrontiersevir.it/wp-content/uploads/2016/08/full_placeholder.png');"></div>
+                        </div>    
+                        <div class="apple-logo"></div>
+                        <div class="leg"></div>
+                        <div class="imac-foot"></div>
+                      </div>
+                </a>
+                    <div class="project-description">
+                        <strong>Nondeterministic Polynomial Educational Games</strong>
+                        <p>Utilized C# to control game dynamics and compute logic for algorithms attempting to solve the NP puzzles.</p>
+                        <p>Found a better understanding of Time Complexity, Nondeterministic Problems, and Tree Traversals.</p>
+                        <p>Followed a SCRUM/Agile workflow conducting 2-week sprints, holding bi-weekly meetings throughout the year. Kept product backlog and sprint sheets on click-up.com and version controlled on GitHub using Git.</p>
+                    </div> 
+                </div>
 
+                <div class="projecto">
+                    <a href="">
+                        <div class="imac">
+                            <div class="screen">
+                            <div class="viewport" style="background-image:url('https://newfrontiersevir.it/wp-content/uploads/2016/08/full_placeholder.png');"></div>
+                            </div>
+                            
+                            <div class="apple-logo"></div>
+                            <div class="leg"></div>
+                            <div class="imac-foot"></div>
+                        </div>
+                       
+                    </a>
+                    <div class="project-description">
+                        <strong>Project</strong>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section class="el-container" id="contact">
             <div class="section-title">
                 <h3>Contact Me</h3>
             </div>
