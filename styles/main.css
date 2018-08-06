@@ -596,12 +596,13 @@ i.fab{
       text-shadow: -5px 0 var(--d-black), 5px -4px var(--h-blue);
     }
   }
-.proto-a{
-    /*for tittles*/
+
+/* .proto-a{
+    for tittles
     font-size: 2em;
     text-decoration: none;
     text-transform: uppercase;
-}
+} */
 /***** END OF CONTACT ME STYLES *****/
 
 .foot {
