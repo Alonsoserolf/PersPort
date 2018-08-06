@@ -32,7 +32,7 @@ module.exports.staticSiteMailer = (event, context, callback) => {
       statusCode: err ? 500: 200,
       headers: {
         'Content-Type': 'application/json',
-        // 'Access-Control-Allow-Origin': 'http://127.0.0.1:5500/',
+        'Access-Control-Allow-Origin': 'alonsoserolf.github.io',
       },
       body: JSON.stringify({
         message: err ? err.message : data,
