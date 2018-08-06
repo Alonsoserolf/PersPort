@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Alonso Gonzalez | Software Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="import" href="rsm.html">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/hamburgers.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
@@ -46,7 +45,7 @@
                         <a href="#contact" data-text="Contact Me">Contact Me</a>
                     </li>
                     <li>
-                        <a href="#" data-text="Resume">Resume</a>
+                        <a href="#resume" data-text="Resume">Resume</a>
                     </li>
                 </ul>
             </nav>
@@ -57,7 +56,7 @@
 
         <section class="img-container" id="me">
             <div class="my-face">
-                <img src="assests/images/alonsocolor.jpg" alt="My Face" class="el-container">
+                <img src="assets/images/alonsocolor.jpg" alt="My Face" class="el-container">
                 <div class="hidden-img-txt">See My True Colors IRL</div>
             </div>
         </section>
@@ -151,29 +150,34 @@
             </div>     
             <div class="project-container">
                 <div class="projecto">
-                <a href="">
+                <a href="https://github.com/Alonsoserolf/NonPolyGames">
                    <div class="imac">
                         <div class="screen">
-                          <div class="viewport" style="background-image:url('https://newfrontiersevir.it/wp-content/uploads/2016/08/full_placeholder.png');"></div>
+                          <div class="viewport" style="background-image:url('assets/images/II-inGame.PNG');"></div>
                         </div>    
                         <div class="apple-logo"></div>
                         <div class="leg"></div>
                         <div class="imac-foot"></div>
-                      </div>
+                    </div>
                 </a>
                     <div class="project-description">
-                        <strong>Nondeterministic Polynomial Educational Games</strong>
+                        <h4>Nondeterministic Polynomial Educational Games</h4>
                         <p>Utilized C# to control game dynamics and compute logic for algorithms attempting to solve the NP puzzles.</p>
                         <p>Found a better understanding of Time Complexity, Nondeterministic Problems, and Tree Traversals.</p>
                         <p>Followed a SCRUM/Agile workflow conducting 2-week sprints, holding bi-weekly meetings throughout the year. Kept product backlog and sprint sheets on click-up.com and version controlled on GitHub using Git.</p>
+                        <span class="dev-tools">C#</span>
+                        <span class="dev-tools">UNITY 3D</span>
+                        <span class="dev-tools">SCRUM</span>
+                        <span class="dev-tools">Adobe Photoshop</span>
+
                     </div> 
                 </div>
 
                 <div class="projecto">
-                    <a href="">
+                    <a href="https://github.com/Alonsoserolf/CrimeDataMining">
                         <div class="imac">
                             <div class="screen">
-                            <div class="viewport" style="background-image:url('https://newfrontiersevir.it/wp-content/uploads/2016/08/full_placeholder.png');"></div>
+                            <div class="viewport" style="background-image:url('assets/images/lacrime.png');"></div>
                             </div>
                             
                             <div class="apple-logo"></div>
@@ -183,7 +187,19 @@
                        
                     </a>
                     <div class="project-description">
-                        <strong>Project</strong>
+                        <h4>Data Mining Chicago and Los Angeles Crime Reports</h4>
+                        <p>Applied full process of data mining from honing down outliers/noise data to applying Statistical Analysis and Data Mining Algorithms to analyze for diversions from hypothesis.</p>
+                        <p>Created Python Scripts to manipulate data stored in an instance AWS server, pandas/scikit to create heatmaps and bar graphs presented via Jupyter Notebook.</p>
+                        <p>Applied knowledge of statistical analysis to data mining structures results.</p>
+                        <span class="dev-tools">Python</span>
+                        <span class="dev-tools">T-SQL</span>
+                        <span class="dev-tools">MS SQL Server</span>
+                        <span class="dev-tools">Jupyter Notebook</span>
+                        <span class="dev-tools">Pandas</span>
+                        <span class="dev-tools">NumPy</span>
+                        <span class="dev-tools">SSIS</span>
+                        <span class="dev-tools">SSAS</span>
+
                     </div> 
                 </div>
             </div>
@@ -234,7 +250,21 @@
 
             </form>
         </section>
+        <section class="el-container" id="resume">
+            <div class="section-title">
+                <h3>Peek My</h3>
+            </div> 
+            <div class="find-me">
+                <a href="https://github.com/Alonsoserolf"> <i class="fab fa-github-alt glitch fa-4x"></i></a>
+                <a href="https://www.linkedin.com/in/alonsogf/"> <i class="fab fa-linkedin fa-4x glitch"></i></a>
+                <i class="fas fa-at fa-4x glitch"></i>
+            </div>
+            <div id="resume">
+                <a class="pdf" href="assets/pdf/Alonso_Gonzalez.pdf" download="Alonso_Gonzalez_Resume.pdf"> Download Resume </a>
+            </div>  
+        </section>  
     </main>
+
     <footer class="foot">
         <p>2018 &copy; brought to life for your enjoyment by Alonso Gonzalez</p>
     </footer>
