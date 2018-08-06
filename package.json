@@ -1,0 +1,13 @@
+{
+  "name": "staticPortfolio",
+  "version": "1.0.0",
+  "description": "static portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/Alonsoserolf/welcome.git",
+  "author": "Alonso Gonzalez Flores <alonsoserolf@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.286.2",
+    "serverless": "^1.29.2"
+  }
+}

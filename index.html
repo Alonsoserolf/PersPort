@@ -210,15 +210,14 @@
                 <h3>Contact Me</h3>
             </div>
 
-            <form class="form">
+            <form class="form" action="https://em9t3ur04k.execute-api.us-west-2.amazonaws.com/dev/static-site-mailer" method="POST">
                 <fieldset class="content-info">
                     <p class="your-name">
                         <label for="name">
                             <span>Your Name:</span>
-                            <strong>
-                                <abbr title="required">*</abbr>
-                            </strong> <br>
-                            <input type="text" class="feedback-input contact-icon" id="username" name="name" placeholder="Alonso Gonzalez">
+                            <strong title="required">*</strong>
+                            <br>
+                            <input type="text" class="feedback-input contact-icon" id="username" name="name" placeholder="Alonso Gonzalez" required>
                         </label>   
                     </p>
 
@@ -226,43 +225,42 @@
                         <label for="email">
                             <span>E-Mail:</span>
                             <strong>
-                                <abbr title="required">*</abbr>
+                                <strong title="required">*</strong>
                             </strong><br>
-                            <input type="text" class="feedback-input contact-icon" id="email" name="email" placeholder="AlonsoGonzalez0x7C8@gmail.com">
+                            <input type="text" class="feedback-input contact-icon" id="email" name="reply_to" placeholder="AlonsoGonzalez0x7C8@gmail.com" required>
                         </label>
                     </p>
                 </fieldset>
-
-                <p class="content-msg">
-                    <label for="content">
+                    <label class="content-msg" for="content">
                         <span>Your Message:</span>
-                        <strong>
-                            <abbr title="required">*</abbr>
-                        </strong>
+                        <strong title="required">*</strong>
                         <br>
-                        <textarea name="content" class="feedback-input contact-icon" id="content" rows="7" placeholder="Your site is alright. You&apos;re alright. We&apos;re in LA. Let&apos;s Hangout!"></textarea>
+                        <textarea name="content" class="feedback-input contact-icon" id="content" rows="7" placeholder="Your site is alright. You&apos;re alright. We&apos;re in LA. Let&apos;s Hangout!" required></textarea>
                     </label>
-                </p>
 
                 <div class="submit">
-                    <input type="submit" value="SEND" class="ease" id="button-blue" />
+
+                    <button type="submit" class="ease" id="button-blue" >SEND</button>
                 </div>
 
             </form>
+            <p id="js-form-response"></p>
         </section>
+
         <section class="el-container" id="resume">
             <div class="section-title">
-                <h3>Peek My</h3>
+                <h3>Want More?</h3>
             </div> 
             <div class="find-me">
                 <a href="https://github.com/Alonsoserolf"> <i class="fab fa-github-alt glitch fa-4x"></i></a>
                 <a href="https://www.linkedin.com/in/alonsogf/"> <i class="fab fa-linkedin fa-4x glitch"></i></a>
-                <i class="fas fa-at fa-4x glitch"></i>
+                <a href="#contact"><i class="fas fa-at fa-4x glitch"></i></a>
             </div>
             <div id="resume">
                 <a class="pdf" href="assets/pdf/Alonso_Gonzalez.pdf" download="Alonso_Gonzalez_Resume.pdf"> Download Resume </a>
             </div>  
         </section>  
+
     </main>
 
     <footer class="foot">

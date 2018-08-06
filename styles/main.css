@@ -560,7 +560,7 @@ a.pdf{
 
 }
 .pdf:hover{
-    background-color: var(--d-black);
+    background-color: var(--l-blue);
     color: var(--bg-col);
 }
 i.fab{
@@ -570,9 +570,13 @@ i.fab{
 .find-me{
     text-align: center;
 }
+.find-me a{
+    color: var(--d-black);
+}
 .glitch:hover {
     -webkit-animation: glitch 300ms infinite;
     animation: glitch 300ms infinite;
+    color: #f7f7f4;
   }
   
   @keyframes glitch {
@@ -608,7 +612,7 @@ i.fab{
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
-    padding: 200px 0 0;
+    padding: 50px 0 0;
     color: var(--d-black);
 }
 
