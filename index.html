@@ -208,8 +208,11 @@
             <div class="section-title">
                 <h3>Contact Me</h3>
             </div>
-
-            <!-- <form class="form" action="https://em9t3ur04k.execute-api.us-west-2.amazonaws.com/dev/static-site-mailer" method="POST">
+            <form class="form" action="https://em9t3ur04k.execute-api.us-west-2.amazonaws.com/dev/static-site-mailer" method="POST">
+                <div style="display:none;">
+                    <label>Keep this field blank</label>
+                    <input type="text" name="honeypot" id="honeypot" />
+                </div>
                 <div class="content-info">
                     <p class="your-name">
                         <label for="name">
@@ -230,35 +233,19 @@
                         </label>
                     </p>
                 </div>
-                    <label class="content-msg" for="content">
+                    <label class="content-msg" for="message">
                         <span>Your Message:</span>
                         <strong title="required">*</strong>
                         <br>
-                        <textarea name="content" class="feedback-input contact-icon" id="content" rows="7" placeholder="Your site is alright. You&apos;re alright. We&apos;re in LA. Let&apos;s Hangout!" required></textarea>
+                        <textarea name="message" class="feedback-input contact-icon" id="message" rows="7" placeholder="Your site is alright. You&apos;re alright. We&apos;re in LA. Let&apos;s Hangout!" required></textarea>
                     </label>
 
                 <div class="submit">
                     <button type="submit" class="ease" id="button-blue" >SEND</button>
                 </div>
 
-            </form> -->
-
-
-            <form action="https://em9t3ur04k.execute-api.us-west-2.amazonaws.com/dev/static-site-mailer" method="POST">
-                <label>
-                    Name
-                    <input type="text" name="name" required>
-                </label>
-                <label>
-                    Email
-                    <input type="email" name="reply_to" required>
-                </label>
-                <label>
-                    Message:
-                    <textarea name="message" required></textarea>
-                </label>
-                <button type="submit">Send Message</button>
             </form>
+
             <p id="js-form-response"></p>
         </section>
 

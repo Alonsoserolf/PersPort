@@ -14,10 +14,7 @@ function sendEmail(formData, callback){
       Body : {
         Text : {
           Charset: 'UTF-8',
-          Data: ` h$(formData.message}
-            
-            Name: $(formData.name}
-              Email: $(formData.reply_to} `,
+          Data: [formData.message]+'\n\nName: '+[formData.name]+'\nEmail: '+[formData.reply_to],
         },
       },
       Subject: {
@@ -30,6 +27,10 @@ function sendEmail(formData, callback){
 }
 module.exports.staticSiteMailer = (event, context, callback) => {
   const formData = JSON.parse(event.body);
+
+  // Return with no response if honeypot is present
+//  if (formData.honeypot) return;
+
   sendEmail(formData, function(err, data) {
     const response = {
       statusCode: err ? 500: 200,

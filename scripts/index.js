@@ -82,6 +82,10 @@ $(()=> {
   const formResponse = document.querySelector('#js-form-response');
     form.onsubmit = e => {
       e.preventDefault();
+    // Escape if the honeypot has been filled
+   
+    if(document.getElementById("honeypot").value !== "") return false;
+		 
 
       //Prep data to send
       const data = {};

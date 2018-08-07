@@ -890,3 +890,35 @@ i.fab{
     }
 }
 
+.loading-dots {
+    height:10px;
+    width:10px;
+    margin:5px 30px;
+    border-radius:50%;
+    background-color:rgba(255,255,255,0.3);
+    position:relative;
+    animation:load-glow 1.5s infinite;
+    animation-delay:.6s
+   }
+   .loading-dots:before,.loading-dots:after {
+    content:'';
+    background-color:rgba(255,255,255,0.3);
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    position:absolute
+   }
+   .loading-dots:before {
+    left:-20px;
+    animation:load-glow 1.5s infinite
+   }
+   .loading-dots:after {
+    right:-20px;
+    animation:load-glow 1.5s infinite;
+    animation-delay:.9s
+   }
+   @keyframes load-glow {
+    50% {
+     background-color:rgba(255,255,255,0.8)
+    }
+   }
