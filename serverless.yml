@@ -63,10 +63,10 @@ functions:
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
     events:
-     - http:
-         path: static-site-mailer
-         method: post
-         cors: true
+      - http:
+        method: post
+        path: static-site-mailer
+        cors: true
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
 #      - sns: greeter-topic
@@ -109,7 +109,7 @@ provider :
   runtime : nodejs6.10
   region: us-west-2
   iamRoleStatements:
-   - Effect: "Allow"
-     Action:
-       - "ses:SendEmail"
-     Resource: ["*"]
+    - Effect: "Allow"
+      Action:
+        - "ses:SendEmail"
+      Resource: ["*"]

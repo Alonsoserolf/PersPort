@@ -210,7 +210,7 @@
             </div>
 
             <form class="form" action="https://em9t3ur04k.execute-api.us-west-2.amazonaws.com/dev/static-site-mailer" method="POST">
-                <fieldset class="content-info">
+                <div class="content-info">
                     <p class="your-name">
                         <label for="name">
                             <span>Your Name:</span>
@@ -221,7 +221,7 @@
                     </p>
 
                     <p class="your-name">
-                        <label for="email">
+                        <label for="reply_to">
                             <span>E-Mail:</span>
                             <strong>
                                 <strong title="required">*</strong>
@@ -229,7 +229,7 @@
                             <input type="text" class="feedback-input contact-icon" id="email" name="reply_to" placeholder="AlonsoGonzalez0x7C8@gmail.com" required>
                         </label>
                     </p>
-                </fieldset>
+                </div>
                     <label class="content-msg" for="content">
                         <span>Your Message:</span>
                         <strong title="required">*</strong>
@@ -238,7 +238,6 @@
                     </label>
 
                 <div class="submit">
-
                     <button type="submit" class="ease" id="button-blue" >SEND</button>
                 </div>
 
