@@ -64,9 +64,9 @@ functions:
 #    Check the event documentation for details
     events:
       - http:
-        method: post
-        path: static-site-mailer
-        cors: true
+          method: post
+          path: static-site-mailer
+          cors: true
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
 #      - sns: greeter-topic

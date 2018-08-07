@@ -86,11 +86,9 @@ $(()=> {
       //Prep data to send
       const data = {};
       const formElements = Array.from(form);
-      //?
-      // console.log(formElements);
+
 
       formElements.map(input => (data[input.name] = input.value));
-      // data.shift();
       console.log(JSON.stringify(data));
 
       //construct http request

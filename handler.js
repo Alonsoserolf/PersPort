@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 const AWS = require('aws-sdk');
 const SES = new AWS.SES();
@@ -14,12 +14,15 @@ function sendEmail(formData, callback){
       Body : {
         Text : {
           Charset: 'UTF-8',
-          Data: `$(formData.message}\n\nName:$(formData.name}\nEmail:$(formData.reply_to}`,
+          Data: ` h$(formData.message}
+            
+            Name: $(formData.name}
+              Email: $(formData.reply_to} `,
         },
       },
       Subject: {
         Charset: 'UTF-8',
-        Data: 'new message from static portfolio',
+        Data: 'message from static portfolio',
       },
     },
   };
