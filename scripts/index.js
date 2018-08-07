@@ -87,7 +87,7 @@ $(()=> {
       const data = {};
       const formElements = Array.from(form);
       //?
-      console.log(formElements);
+      // console.log(formElements);
 
       formElements.map(input => (data[input.name] = input.value));
       // data.shift();
