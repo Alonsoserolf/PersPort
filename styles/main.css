@@ -189,6 +189,9 @@ article {
     margin: 0 auto;
 
 }
+.project-description p{
+    padding: 0 15px;
+}
 
 .project-container a{
     display: inline-block;

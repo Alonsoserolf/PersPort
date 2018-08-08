@@ -38,7 +38,7 @@ $(()=> {
   }
 
   //animview uses anim.css to show animation when content is in view port
-  var options = {animateThreshold: 70}
+  var options = {animateThreshold: 60}
   $('.aniview').AniView(options);
 
   scrollPage(750);

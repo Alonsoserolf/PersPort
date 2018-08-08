@@ -193,4 +193,11 @@ textarea:hover {
   form .content-info p:nth-child(2){
       padding-left:0;
   } 
+  form .content-info label:nth-child(1){
+    padding-right:0;
+  }
+  
+  form .content-info label:nth-child(2){
+    padding-left:0;
+  }
 }
