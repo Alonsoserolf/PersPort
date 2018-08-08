@@ -48,11 +48,6 @@ body {
     font-size: 16px;
 }
 
-.visible {
-    visibility: visible;
-    opacity: 1;
-}
-
 /** ABOUT ME STYLING STARTING WITH MY PORTFOLIO PIC**/
 img[alt="My Face"] {
     display: block;
@@ -317,4 +312,8 @@ i.fab{
     .project-description{
         width: 100%; 
     }
+}
+.visible {
+    visibility: visible;
+    opacity: 1;
 }
