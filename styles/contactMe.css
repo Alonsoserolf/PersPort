@@ -1,0 +1,196 @@
+/*****contact form look*****/
+.form {
+  max-width: 650px;
+  /* overflow: auto; */
+  margin: 0 auto;
+  padding: 9px 15px;
+  width: 100%;
+}
+.form::after{
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+form .your-name {
+  display: block;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 50%;
+  float: left;
+}
+
+.form span{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* name and email */
+form .content-info {
+  padding: 0 0 1em;
+  border: none;
+  overflow: auto;
+}
+
+form .content-info label:nth-child(1){
+  padding-right:5px;
+}
+
+form .content-info label:nth-child(2){
+  padding-left:5px;
+}
+
+.content-msg {
+  margin: 0;
+  width: 100%;
+}
+
+.feedback-input {
+  color: var(--dark-col);
+  border-radius: 10px;
+  background-color: #fafafa;
+  padding: 13px 13px 13px 55px;
+  margin: 0 auto;
+  border: none;
+  width: 100%;
+  display: inline-block;
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, .4);
+}
+
+.feedback-input:focus {
+  background: #fff;
+  border: 2px solid var(--purp);
+  color: #222;
+}
+
+/*Contact Form Icons*/
+
+#username {
+  background-image: url(//rexkirby.com/kirbyandson/images/name.svg);
+}
+
+#email {
+  background-image: url(//rexkirby.com/kirbyandson/images/email.svg);
+}
+
+#message {
+  background-image: url(//rexkirby.com/kirbyandson/images/comment.svg);
+}
+
+.contact-icon,
+.contact-icon:focus {
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+  resize: none;
+  font-family: inherit;
+}
+
+input,
+textarea{
+  font-size: .8em;
+  letter-spacing: .05em;
+}
+
+input:hover,
+textarea:hover {
+  background-color: rgba(110, 102, 254, .1);
+}
+
+.submit [type="submit"]{
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-right: 10px; */
+  font-size: 2em;
+  font-weight: 700;
+  width: 5em;
+  height: 1.5em;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--h-blue);
+  border: none;
+  color: var(--d-black);
+  padding: 5px 0;
+  transition: all 0.1s;
+  box-shadow: inset 1px 2px 2px rgba(0, 0, 0, .1);
+}
+
+.submit [type="submit"]:hover {
+  color: var(--bg-col);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, .7), -1px 4px 2px rgba(0, 0, 0, .8);
+}
+
+.submit [type="submit"]:active{
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, .9), -1px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+.loading-dots {
+  height:10px;
+  width:10px;
+  margin:5px 30px;
+  border-radius:50%;
+  background-color:rgba(255,255,255,0.3);
+  position:relative;
+  animation:load-glow 1.5s infinite;
+  animation-delay:.6s
+ }
+ .loading-dots:before,.loading-dots:after {
+  content:'';
+  background-color:rgba(255,255,255,0.3);
+  height:10px;
+  width:10px;
+  border-radius:50%;
+  position:absolute
+ }
+ .loading-dots:before {
+  left:-20px;
+  animation:load-glow 1.5s infinite
+ }
+ .loading-dots:after {
+  right:-20px;
+  animation:load-glow 1.5s infinite;
+  animation-delay:.9s
+ }
+ @keyframes load-glow {
+  50% {
+   background-color:rgba(255,255,255,0.8)
+  }
+ }
+
+.submit-success{
+  background-color: #f93f1f;
+}
+.submit-error{
+  background-color: #0cce13;
+}
+#js-form-response{
+  display: inline-block;
+  line-height: 2em;
+  padding: 0 1em;
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--bg-col);
+
+}
+
+@media screen and (max-width: 600px) {
+  section > .form{
+      padding: 0 15px;
+  }
+  form .your-name {
+      width: 100%;
+  }
+  form.form label {
+      margin: 0;
+  }
+  form .content-info p:nth-child(1){
+      padding-right:0;
+  }
+  form .content-info p:nth-child(2){
+      padding-left:0;
+  } 
+}
