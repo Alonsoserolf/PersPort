@@ -5,13 +5,13 @@
   function toggleButtonState(button) {
     button.disabled = !button.disabled;
     button.innerHTML = button.disabled
-      ? '<div class="loading-dots"></div>'
+      ? '<center><div class="loading-dots" style=></div></center>'
       : "SEND";
-    // button.getAttribute('data-label');
   }
 
   form.onsubmit = e => {
     e.preventDefault();
+    formResponse.classList.remove("submit-success","submit-error","animated","fadeInLeft","slow");
 
     // Escape if the honeypot has been filled
 
@@ -35,11 +35,15 @@
     xhr.send(JSON.stringify(data));
     xhr.onloadend = response => {
       toggleButtonState(submitButton);
+
       if (response.target.status === 200) {
         form.reset();
-        formResponse.innerHTML =
-          "Thanks for the message. I'll be in touch shortly";
+        
+        formResponse.classList.add("submit-success","animated","fadeInLeft","slow");
+        formResponse.innerHTML = "Thanks for the message. I'll be in touch shortly";
       } else {
+
+        formResponse.classList.add("submit-error","animated","fadeInLeft");
         formResponse.innerHTML = "Something went wrong";
         console.error(JSON.parse(response.target.response).message);
       }

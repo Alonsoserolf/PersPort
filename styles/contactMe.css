@@ -171,11 +171,11 @@ textarea:hover {
   }
 }
 
-.submit-success {
+.submit-error {
   background-color: #f93f1f;
 }
 
-.submit-error {
+.submit-success {
   background-color: #0cce13;
 }
 
