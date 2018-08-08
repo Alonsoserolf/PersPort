@@ -9,8 +9,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/hamburgers.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/animate.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://unpkg.com/jquery-aniview@1.0.1/dist/jquery.aniview.js"
+    integrity="sha384-zDA6q/t525x7f6KD/OaOe24vCxSPU3eraILc2NU+ZA7ISsc3ExQbj8PB56FRMq6H"
+    crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -29,22 +34,22 @@
                 </span>
             </button>
 
-            <nav>
+            <nav onclick="myFunction(this)">
                 <ul class="menu">
                     <li>
-                        <a href="#para" data-text="Home">Home</a>
+                        <a href="#para" data-text="Home" >Home</a>
                     </li>
                     <li>
                         <a href="#about" data-text="About">About</a>
                     </li>
                     <li>
-                        <a href="#projects" data-text="Projects">Projects</a>
+                        <a href="#projects" data-text="Projects" >Projects</a>
                     </li>
                     <li>
-                        <a href="#contact" data-text="Contact Me">Contact Me</a>
+                        <a href="#contact" data-text="Contact Me" >Contact Me</a>
                     </li>
                     <li>
-                        <a href="#resume" data-text="Resume">Resume</a>
+                        <a href="#resume" data-text="Resume" >Resume</a>
                     </li>
                 </ul>
             </nav>
@@ -53,14 +58,14 @@
     </div>
     <main class="content">
 
-        <section class="img-container" id="me">
+        <section id="me" class="img-container aniview" data-av-animation="fadeInUp" >
             <div class="my-face">
                 <img src="assets/images/alonsocolor.jpg" alt="My Face" class="el-container">
                 <div class="hidden-img-txt">See My True Colors IRL</div>
             </div>
         </section>
 
-        <section class="el-container " id="about">
+        <section class="el-container aniview slow" data-av-animation="fadeInUp" id="about">
             <article class="intro">
                 <h2> Hello world! nice to meet ya. My name is
                     <span class="name">Alonso Gonzalez</span>, a software developer that recently sprouted from
@@ -69,7 +74,7 @@
             </article>
         </section>
 
-        <section class="el-container skill-section" id="skills">
+        <section class="el-container skill-section aniview slow" data-av-animation="fadeInUp" id="skills">
             <div class="section-title">
                 <h3>Skills</h3>
             </div>
@@ -143,7 +148,7 @@
                 </div>
         </section>
 
-        <section class="el-container " id="projects">
+        <section id="projects" class="el-container aniview slow" data-av-animation="fadeInUp">
             <div class="section-title">
                 <h3>Projects</h3>
             </div>     
@@ -161,9 +166,9 @@
                 </a>
                     <div class="project-description">
                         <h4>Nondeterministic Polynomial Educational Games</h4>
-                        <p>Utilized C# to control game dynamics and compute logic for algorithms attempting to solve the NP puzzles.</p>
-                        <p>Found a better understanding of Time Complexity, Nondeterministic Problems, and Tree Traversals.</p>
-                        <p>Followed a SCRUM/Agile workflow conducting 2-week sprints, holding bi-weekly meetings throughout the year. Kept product backlog and sprint sheets on click-up.com and version controlled on GitHub using Git.</p>
+                        <p>A series of games that can aide in visualizing time complexity and algorithms concepts. In its first release, the team (NP Games) focused on famous puzzles that can be modified to represent an NP complete problems.</p>
+                        <p>The games consist of a 3D versions of puzzles like Sokoban, Tic Tac Toe, Instant Insanity, and an optimization problem we called the brick problem.</p>
+                        <p>The success of this project was augmented by following a SCRUM/Agile methodology through development. The team kept advancing by having manageable incremental growth.</p>
                         <span class="dev-tools">C#</span>
                         <span class="dev-tools">UNITY 3D</span>
                         <span class="dev-tools">SCRUM</span>
@@ -204,7 +209,7 @@
             </div>
         </section>
 
-        <section class="el-container" id="contact">
+        <section id="contact" class="el-container aniview slow" data-av-animation="fadeInUp">
             <div class="section-title">
                 <h3>Contact Me</h3>
             </div>
@@ -214,24 +219,22 @@
                     <input type="text" name="honeypot" id="honeypot" />
                 </div>
                 <div class="content-info">
-                    <p class="your-name">
-                        <label for="name">
+                        <label for="name" class="your-name">
                             <span>Your Name:</span>
                             <strong title="required">*</strong>
                             <br>
                             <input type="text" class="feedback-input contact-icon" id="username" name="name" placeholder="Alonso Gonzalez" required>
                         </label>   
-                    </p>
 
-                    <p class="your-name">
-                        <label for="reply_to">
+                    <!-- <p class="your-name"> -->
+                        <label for="reply_to" class="your-name">
                             <span>E-Mail:</span>
                             <strong>
                                 <strong title="required">*</strong>
                             </strong><br>
                             <input type="text" class="feedback-input contact-icon" id="email" name="reply_to" placeholder="AlonsoGonzalez0x7C8@gmail.com" required>
                         </label>
-                    </p>
+                    <!-- </p> -->
                 </div>
                     <label class="content-msg" for="message">
                         <span>Your Message:</span>
@@ -241,15 +244,15 @@
                     </label>
 
                 <div class="submit">
-                    <button type="submit" class="ease" id="button-blue" >SEND</button>
+                    <button type="submit" class="ease" >SEND</button>
                 </div>
-
+            <p id="js-form-response" class="submit-success"></p>
             </form>
 
-            <p id="js-form-response"></p>
+
         </section>
 
-        <section class="el-container" id="resume">
+        <section id="resume" class="el-container aniview slow" data-av-animation="fadeInUp">
             <div class="section-title">
                 <h3>Want More?</h3>
             </div> 
@@ -271,6 +274,8 @@
 
 
 <script src="scripts/index.js"></script>
+<script src="scripts/contactMe.js"></script>
+
 </body>
 
 </html>
